@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erkam Muhammet Karcıoğlu - CV</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --text-primary: #c9d1d9;
+            --text-secondary: #8b949e;
+            --accent-color: #58a6ff;
+            --accent-gradient: linear-gradient(135deg, #238636 0%, #2ea043 100%);
+            --badge-bg: #21262d;
+            --badge-border: #30363d;
+        }
+
+        body { 
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; 
+            background-color: var(--bg-color); 
+            color: var(--text-primary); 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 20px; 
+        }
+
+        .container { 
+            max-width: 950px; 
+            margin: 30px auto; 
+            background: var(--card-bg); 
+            padding: 50px; 
+            border-radius: 16px; 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+            border: 1px solid var(--border-color);
+        }
+        
+        /* Başlık Bölümü */
+        header { 
+            border-bottom: 2px solid var(--border-color); 
+            padding-bottom: 25px; 
+            margin-bottom: 35px; 
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .header-content h1 { 
+            margin: 0; 
+            color: #ffffff; 
+            font-size: 2.8em; 
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle { 
+            color: var(--accent-color); 
+            font-size: 1.25em; 
+            font-weight: 600; 
+            margin-top: 8px; 
+        }
+
+        .contact { 
+            font-size: 0.9em; 
+            color: var(--text-secondary); 
+            background: var(--badge-bg);
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 1px solid var(--badge-border);
+        }
+        
+        /* Alt Başlıklar */
+        h2 { 
+            color: var(--accent-color); 
+            font-size: 1.4em;
+            border-bottom: 1px solid var(--border-color); 
+            padding-bottom: 10px; 
+            margin-top: 40px; 
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p {
+            color: var(--text-primary);
+            font-size: 1em;
+        }
+
+        /* Yetkinlik Rozetleri (Badges) */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-card {
+            background: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-color);
+        }
+
+        .skill-card strong {
+            color: #ffffff;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .skill-card span {
+            color: var(--text-secondary);
+            font-size: 0.9em;
+        }
+        
+        /* Deneyim ve Eğitim Kutuları */
+        .item-box { 
+            background: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .item-box:hover {
+            border-color: #58a6ff;
+            box-shadow: 0 4px 12px rgba(88, 166, 255, 0.1);
+        }
+
+        .item-box strong { 
+            display: block; 
+            color: #ffffff; 
+            font-size: 1.15em; 
+            margin-bottom: 4px;
+        }
+
+        .date { 
+            font-size: 0.85em; 
+            color: var(--accent-color); 
+            font-weight: 500;
+            margin-bottom: 10px; 
+        }
+
+        .item-box p { 
+            margin: 0; 
+            font-size: 0.95em; 
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 20px; }
+            header { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Erkam Muhammet Karcıoğlu</h1>
+                <div class="subtitle">Bulut Bilişim Operatörü & Sistem Yöneticisi</div>
+            </div>
+            <div class="contact">
+                Yüreğir, Adana | erkam.karcioglu@email.com<br>
+                <strong>erkamkarcioglu.com.tr</strong>
+            </div>
+        </header>
+
+        <section>
+            <h2>Hakkımda</h2>
+            <p>Linux sistem yönetimi, sanallaştırma teknolojileri ve ağ mimarileri üzerine yoğunlaşan bilişim teknolojileri uzmanıyım. Python ile otomasyon süreçleri geliştiriyor ve bulut altyapılarında pratik, ölçeklenebilir çözümler üretiyorum. Teorik altyapımı, sunucu yapılandırmalarından TEKNOFEST ve TÜBİTAK gibi prestijli projelere kadar geniş bir yelpazede pekiştiriyorum.</p>
+        </section>
+
+        <section>
+            <h2>Teknik Yetkinlikler</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <strong>Sistem Yönetimi</strong>
+                    <span>Linux (Ubuntu Server), Windows Server 11, Shell Scripting, Zsh, btop</span>
+                </div>
+                <div class="skill-card">
+                    <strong>Sanallaştırma & Konteyner</strong>
+                    <span>Docker, Proxmox VE, Hyper-V, VirtualBox</span>
+                </div>
+                <div class="skill-card">
+                    <strong>Ağ (Networking)</strong>
+                    <span>IP Yapılandırması, Subnetting, DHCP, DNS, VLAN, Ağ Sanallaştırma</span>
+                </div>
+                <div class="skill-card">
+                    <strong>Yazılım & Araçlar</strong>
+                    <span>Python (Tkinter, Pygame, Otomasyon Scriptleri), VS Code</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Eğitim</h2>
+            <div class="item-box">
+                <strong>Bulut Bilişim Operatörlüğü (Ön Lisans)</strong>
+                <div class="date">2. Sınıf Öğrencisi</div>
+            </div>
+            <div class="item-box">
+                <strong>Bilişim Teknolojileri</strong>
+                <div class="date">Meslek Lisesi Mezunu</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projeler & Deneyimler</h2>
+            <div class="item-box">
+                <strong>TEKNOFEST & TÜBİTAK 4006 Projeleri</strong>
+                <div class="date">Aktif Katılım & Geliştirme</div>
+                <p>Teknoloji yarışmaları ve bilim fuarları kapsamında yenilikçi projelerin tasarlanması, yazılım altyapısının kurulması ve operasyonel süreçlerin yönetilmesinde aktif rol oynandı.</p>
+            </div>
+            <div class="item-box">
+                <strong>Sunucu Yapılandırması & Otomasyon</strong>
+                <div class="date">Altyapı & Yedekleme Çözümleri</div>
+                <p>Ubuntu ve Windows 11 ortamlarında sanal makine kurulumları. IIS (Inetpub) dizinleri için D:\ sürücüsüne gece 02:00'de çalışan günlük otomatik yedekleme (backup) betiklerinin yazılması ve zamanlanması.</p>
+            </div>
+            <div class="item-box">
+                <strong>Python Uygulama Geliştirme</strong>
+                <div class="date">Yazılım Projeleri</div>
+                <p>Kullanıcı etkileşimli masaüstü araçları, algoritmik sayı tahmin oyunları ve süreç otomasyonu sağlayan pratik scriptlerin geliştirilmesi.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
